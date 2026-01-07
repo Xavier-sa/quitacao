@@ -120,4 +120,3 @@ Críticas e sugestões são bem-vindas.
 **Autor:** Wellington Aparecido Santos Xavier  
 **Formação:** Gestão Pública  
 **Foco atual:** Desenvolvimento de soluções práticas, aprendizado contínuo e base sólida em tecnologia
-# quitacao
