@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quitação Estratégica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href=".img/icon-32-32.PNG"
+    />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  </head>
+  <body>
+    <!-- LOGIN PIN -->
+    <div id="login" class="login">
+      <h2>🔒 Acesso</h2>
+      <input type="password" id="pinInput" placeholder="Digite seu PIN" />
+      <button onclick="verificarPin()">Entrar</button>
+    </div>
+
+    <!-- APP -->
+    <div id="app" class="hidden">
+      <h1>Plano de Quitação</h1>
+      <div class="box">
+        <p>Renda mensal: R$ <span id="renda"></span></p>
+        <button onclick="alterarRenda()">Alterar renda</button>
+      </div>
+
+      <div class="box destaque">
+        <p><strong>Reserva:</strong> R$ <span id="reserva"></span></p>
+        <button onclick="adicionarReserva()">➕ Guardar valor</button>
+      </div>
+
+      <h2>📊 Progresso</h2>
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+      <p class="center">
+        Quitadas: <span id="quitadas"></span> /
+        <span id="total"></span>
+      </p>
+
+      <h2>➕ Nova Dívida</h2>
+      <div class="box">
+        <input type="text" id="credor" placeholder="Credor" />
+        <input type="number" id="valor" placeholder="Valor" />
+        <button onclick="adicionarDivida()">Adicionar Dívida</button>
+      </div>
+
+      <h2>📌 Dívidas</h2>
+      <div id="dividas"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+  </body>
+</html>
