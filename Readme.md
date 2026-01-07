@@ -1,6 +1,9 @@
 # ⟁ Quitação Estratégica — Protótipo Offline (PWA)
 
-![Quitação Estratégica — Protótipo Offline](./img/quitando.jpg)
+<p align="center">
+  <img src="./img/quitando.jpg" alt="Quitação Estratégica — Protótipo Offline" width="400">
+</p>
+
 
 > Protótipo em desenvolvimento voltado à **organização e quitação de dívidas pessoais**, com funcionamento **100% offline**, foco em **educação financeira** e **autonomia do usuário**.
 
